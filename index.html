@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SysZone Solution | AI Agent Development Services</title>
+    <meta name="description" content="We build smart AI agents that grow your business 24/7. Customer support, sales automation, WhatsApp AI, and lead generation agents.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/artificial-intelligence.png" type="image/png">
+<base target="_blank">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <span class="logo-text">SysZone<span class="logo-accent">Solution</span></span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#demo" class="nav-link">AI Demo</a></li>
+                <li><a href="#selector" class="nav-link">Agent Selector</a></li>
+                <li><a href="#usecases" class="nav-link">Use Cases</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Animated Background -->
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-sparkles"></i>
+                    <span>Next-Gen AI Automation</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    We Build <span class="gradient-text">Smart AI Agents</span> That Grow Your Business 24/7
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Transform your customer interactions with intelligent AI agents that handle support, 
+                    sales, and lead generation automatically—saving time and boosting revenue.
+                </p>
+                
+                <div class="typewriter-container">
+                    <span class="typewriter-prefix">Building:</span>
+                    <span class="typewriter-text" id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#demo" class="btn btn-primary btn-lg">
+                        <i class="fas fa-play-circle"></i>
+                        Try Live Demo
+                    </a>
+                    <a href="#contact" class="btn btn-outline btn-lg">
+                        <i class="fas fa-calendar-check"></i>
+                        Book Free Consultation
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="150">0</span>+
+                        <span class="stat-label">AI Agents Built</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="99">0</span>%
+                        <span class="stat-label">Response Rate</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="24">0</span>/7
+                        <span class="stat-label">Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="float-card float-1">
+                <i class="fas fa-robot"></i>
+                <span>AI Powered</span>
+            </div>
+            <div class="float-card float-2">
+                <i class="fas fa-bolt"></i>
+                <span>Instant Response</span>
+            </div>
+            <div class="float-card float-3">
+                <i class="fas fa-shield-alt"></i>
+                <span>Secure & Reliable</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Demo Section -->
+    <section class="demo-section" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Interactive Demo</span>
+                <h2 class="section-title">Experience Our <span class="gradient-text">AI in Action</span></h2>
+                <p class="section-subtitle">Try our AI agent demo. Type a message and see how our intelligent agents respond in real-time.</p>
+            </div>
+            
+            <div class="demo-container">
+                <div class="chat-interface">
+                    <!-- Chat Header -->
+                    <div class="chat-header">
+                        <div class="chat-agent">
+                            <div class="agent-avatar">
+                                <i class="fas fa-robot"></i>
+                                <span class="status-dot online"></span>
+                            </div>
+                            <div class="agent-info">
+                                <h4>SysZone AI Assistant</h4>
+                                <span class="agent-status">Online • Ready to help</span>
+                            </div>
+                        </div>
+                        <div class="chat-actions">
+                            <button class="chat-action-btn" title="Clear chat" id="clearChat">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Chat Messages -->
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <p>Hello! 👋 I'm your AI assistant powered by SysZone Solution. I can help you with:</p>
+                                <ul class="message-list">
+                                    <li>Customer support automation</li>
+                                    <li>Sales and lead generation</li>
+                                    <li>WhatsApp & Instagram integration</li>
+                                    <li>Custom AI agent development</li>
+                                </ul>
+                                <span class="message-time">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Chat Input -->
+                    <div class="chat-input-area">
+                        <div class="chat-input-wrapper">
+                            <input 
+                                type="text" 
+                                class="chat-input" 
+                                id="chatInput" 
+                                placeholder="Type your message..."
+                                autocomplete="off"
+                            >
+                            <button class="chat-send-btn" id="sendMessage">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <div class="quick-replies">
+                            <button class="quick-reply" data-message="What services do you offer?">What services?</button>
+                            <button class="quick-reply" data-message="How much does it cost?">Pricing</button>
+                            <button class="quick-reply" data-message="Book a consultation">Book demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Agent Selector Tool -->
+    <section class="selector-section" id="selector">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">AI Agent Finder</span>
+                <h2 class="section-title">Find Your <span class="gradient-text">Perfect AI Agent</span></h2>
+                <p class="section-subtitle">Answer a few questions and we'll recommend the ideal AI agent for your business needs.</p>
+            </div>
+            
+            <div class="selector-container">
+                <div class="selector-form">
+                    <div class="form-group">
+                        <label for="businessType">
+                            <i class="fas fa-building"></i>
+                            Select Your Business Type
+                        </label>
+                        <select id="businessType" class="form-select">
+                            <option value="">Choose your industry...</option>
+                            <option value="realestate">Real Estate</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="clinic">Healthcare / Clinic</option>
+                            <option value="education">Education</option>
+                            <option value="agency">Digital Marketing Agency</option>
+                            <option value="restaurant">Restaurant / Food</option>
+                            <option value="consulting">Consulting Services</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="businessGoal">
+                            <i class="fas fa-bullseye"></i>
+                            What's Your Primary Goal?
+                        </label>
+                        <select id="businessGoal" class="form-select">
+                            <option value="">Select your goal...</option>
+                            <option value="sales">Increase Sales</option>
+                            <option value="support">Customer Support</option>
+                            <option value="automation">Process Automation</option>
+                            <option value="leads">Lead Generation</option>
+                            <option value="engagement">Customer Engagement</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="platform">
+                            <i class="fas fa-platform"></i>
+                            Preferred Platform
+                        </label>
+                        <select id="platform" class="form-select">
+                            <option value="">Choose platform...</option>
+                            <option value="website">Website Chat</option>
+                            <option value="whatsapp">WhatsApp Business</option>
+                            <option value="crm">CRM Integration</option>
+                            <option value="instagram">Instagram DM</option>
+                            <option value="facebook">Facebook Messenger</option>
+                        </select>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-lg btn-full" id="generateRecommendation">
+                        <i class="fas fa-magic"></i>
+                        Generate Recommendation
+                    </button>
+                </div>
+                
+                <!-- Result Card -->
+                <div class="recommendation-result" id="recommendationResult">
+                    <div class="result-card">
+                        <div class="result-header">
+                            <div class="result-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Your Perfect AI Agent</h3>
+                        </div>
+                        <div class="result-content">
+                            <h4 id="agentName">Smart Sales Assistant</h4>
+                            <p id="agentDescription">An intelligent AI agent designed to handle customer inquiries, qualify leads, and boost your sales conversion rate.</p>
+                            
+                            <div class="result-features">
+                                <h5>Key Features:</h5>
+                                <ul id="agentFeatures">
+                                    <li><i class="fas fa-check"></i> 24/7 automated responses</li>
+                                    <li><i class="fas fa-check"></i> Lead qualification & scoring</li>
+                                    <li><i class="fas fa-check"></i> CRM integration ready</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="result-price">
+                                <span class="price-label">Starting from</span>
+                                <span class="price-value" id="agentPrice">$299/month</span>
+                            </div>
+                        </div>
+                        <div class="result-actions">
+                            <a href="#contact" class="btn btn-primary">Get Started</a>
+                            <a href="#demo" class="btn btn-outline">Try Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Case Simulation Section -->
+    <section class="usecases-section" id="usecases">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Industry Solutions</span>
+                <h2 class="section-title">See How It <span class="gradient-text">Works For You</span></h2>
+                <p class="section-subtitle">Select your industry to see how our AI agents transform your business operations.</p>
+            </div>
+            
+            <!-- Industry Tabs -->
+            <div class="industry-tabs">
+                <button class="industry-tab active" data-industry="realestate">
+                    <i class="fas fa-home"></i>
+                    <span>Real Estate</span>
+                </button>
+                <button class="industry-tab" data-industry="ecommerce">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>E-commerce</span>
+                </button>
+                <button class="industry-tab" data-industry="healthcare">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Healthcare</span>
+                </button>
+                <button class="industry-tab" data-industry="education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </button>
+                <button class="industry-tab" data-industry="marketing">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Digital Marketing</span>
+                </button>
+            </div>
+            
+            <!-- Workflow Display -->
+            <div class="workflow-container">
+                <div class="workflow-content" id="workflowContent">
+                    <!-- Dynamic content will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Pricing Plans</span>
+                <h2 class="section-title">Flexible <span class="gradient-text">Pricing</span> For Every Business</h2>
+                <p class="section-subtitle">Scale your AI agent as your business grows. No hidden fees, cancel anytime.</p>
+            </div>
+            
+            <!-- Conversation Slider -->
+            <div class="pricing-calculator">
+                <div class="slider-container">
+                    <label for="conversationSlider">
+                        <i class="fas fa-comments"></i>
+                        Estimated Daily Conversations
+                    </label>
+                    <div class="slider-wrapper">
+                        <input 
+                            type="range" 
+                            id="conversationSlider" 
+                            min="100" 
+                            max="10000" 
+                            value="500"
+                            step="100"
+                        >
+                        <div class="slider-values">
+                            <span>100</span>
+                            <span id="sliderValue" class="slider-current">500</span>
+                            <span>10,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pricing Cards -->
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Starter</h3>
+                        <p class="pricing-desc">Perfect for small businesses getting started</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount" id="starterPrice">99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to <span id="starterConversations">1,000</span> conversations</li>
+                        <li><i class="fas fa-check"></i> Website chat integration</li>
+                        <li><i class="fas fa-check"></i> Basic AI responses</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li><i class="fas fa-check"></i> 1 AI agent</li>
+                        <li class="disabled"><i class="fas fa-times"></i> WhatsApp integration</li>
+                        <li class="disabled"><i class="fas fa-times"></i> CRM integration</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Pro</h3>
+                        <p class="pricing-desc">For growing businesses with higher demands</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount" id="proPrice">299</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to <span id="proConversations">5,000</span> conversations</li>
+                        <li><i class="fas fa-check"></i> Website + WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Advanced AI with context</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> 3 AI agents</li>
+                        <li><i class="fas fa-check"></i> CRM integration</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Custom development</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Enterprise</h3>
+                        <p class="pricing-desc">Custom solutions for large organizations</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount" id="enterprisePrice">799</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to <span id="enterpriseConversations">20,000</span> conversations</li>
+                        <li><i class="fas fa-check"></i> All platforms included</li>
+                        <li><i class="fas fa-check"></i> Custom AI training</li>
+                        <li><i class="fas fa-check"></i> 24/7 dedicated support</li>
+                        <li><i class="fas fa-check"></i> Unlimited AI agents</li>
+                        <li><i class="fas fa-check"></i> Full API access</li>
+                        <li><i class="fas fa-check"></i> Custom development</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section" id="trust">
+        <div class="container">
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="stat-number-wrapper">
+                        <span class="stat-count" data-count="150">0</span>+
+                    </div>
+                    <p class="stat-label">AI Agents Built</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="stat-number-wrapper">
+                        <span class="stat-count" data-count="2">0</span>M+
+                    </div>
+                    <p class="stat-label">Conversations Handled</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-number-wrapper">
+                        <span class="stat-count" data-count="99">0</span>%
+                    </div>
+                    <p class="stat-label">Client Satisfaction</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number-wrapper">
+                        <span class="stat-count" data-count="24">0</span>/7
+                    </div>
+                    <p class="stat-label">Always Available</p>
+                </div>
+            </div>
+            
+            <!-- Client Logos -->
+            <div class="clients-section">
+                <p class="clients-title">Trusted by innovative companies</p>
+                <div class="clients-grid">
+                    <div class="client-logo"><i class="fas fa-building"></i><span>TechCorp</span></div>
+                    <div class="client-logo"><i class="fas fa-store"></i><span>ShopMax</span></div>
+                    <div class="client-logo"><i class="fas fa-hospital"></i><span>MedCare</span></div>
+                    <div class="client-logo"><i class="fas fa-university"></i><span>EduLearn</span></div>
+                    <div class="client-logo"><i class="fas fa-home"></i><span>RealtyPro</span></div>
+                    <div class="client-logo"><i class="fas fa-chart-line"></i><span>GrowthAgency</span></div>
+                </div>
+            </div>
+            
+            <!-- Testimonials -->
+            <div class="testimonials-section">
+                <h3 class="testimonials-title">What Our Clients Say</h3>
+                <div class="testimonials-slider" id="testimonialsSlider">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"SysZone transformed our customer support. Our AI agent handles 80% of inquiries automatically, freeing our team to focus on complex issues."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">JD</div>
+                                <div class="author-info">
+                                    <h4>John Davidson</h4>
+                                    <span>CEO, TechCorp Solutions</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The WhatsApp AI agent increased our sales by 40% in just two months. It's like having a sales team that never sleeps!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">SM</div>
+                                <div class="author-info">
+                                    <h4>Sarah Mitchell</h4>
+                                    <span>Founder, ShopMax Online</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Our clinic's appointment booking is now fully automated. Patients love the instant responses, and we save 20+ hours per week."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">DR</div>
+                                <div class="author-info">
+                                    <h4>Dr. Robert Chen</h4>
+                                    <span>Director, MedCare Clinic</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The lead generation AI agent qualifies prospects before they reach our sales team. Our conversion rate doubled!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">EW</div>
+                                <div class="author-info">
+                                    <h4>Emily Watson</h4>
+                                    <span>Sales Director, GrowthAgency</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots" id="testimonialDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Get Your Custom AI Agent in <span class="gradient-text">48 Hours</span></h2>
+                <p class="cta-subtitle">Ready to transform your business? Let's build your AI agent today. Free consultation, no commitment required.</p>
+                
+                <div class="cta-buttons">
+                    <a href="https://wa.me/1234567890" class="btn btn-whatsapp btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Chat on WhatsApp
+                    </a>
+                    <a href="#" class="btn btn-primary btn-lg" id="bookConsultation">
+                        <i class="fas fa-calendar-check"></i>
+                        Book Free Consultation
+                    </a>
+                </div>
+                
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free 14-day trial</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cancel anytime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <span class="logo-text">SysZone<span class="logo-accent">Solution</span></span>
+                    </a>
+                    <p class="footer-desc">Building intelligent AI agents that automate your business operations and drive growth 24/7.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Customer Support AI</a></li>
+                        <li><a href="#">Sales Automation</a></li>
+                        <li><a href="#">WhatsApp AI Agent</a></li>
+                        <li><a href="#">Lead Generation</a></li>
+                        <li><a href="#">Custom AI Development</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@syszonesolution.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+92 3267541914</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Johar Town Lahore</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SysZone Solution make by Raffay Ali & Sufyan Ali. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Consultation -->
+    <div class="modal" id="consultationModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Book Your Free Consultation</h3>
+                <p>Fill in your details and we'll get back to you within 24 hours.</p>
+            </div>
+            <form class="consultation-form" id="consultationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" placeholder="Your Company">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">How can we help?</label>
+                    <textarea id="message" name="message" rows="3" placeholder="Tell us about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-paper-plane"></i>
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Message sent successfully!</span>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
